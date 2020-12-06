@@ -14,7 +14,7 @@ public class Ex2 {
 			System.out.println("vous souhaitez une remise ");
 			String rep = scanner.next();
 			double tva=0.2;
-			if(rep.equals("yes") || rep.equals("oui")){
+			if(rep.equalsIgnoreCase("yes") || rep.equalsIgnoreCase("oui")){
 				System.out.println("saisir le pourcentage de la remise ");
 				Float remise = scanner.nextFloat();
 				double prixRemis=a-(a*remise)/100;
